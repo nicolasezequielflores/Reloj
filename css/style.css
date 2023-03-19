@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    -webkit-tap-highlight-color: #00000000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    background: #dde1e7;
+}
+
+.neoCont{
+
+    height: 300px;
+    width: 100%;
+    border-radius: 40px;
+    background: #dde1e7;
+    box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+}
+
+.lugarCont{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+}
+
+.horaCont{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+#location{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.hora{
+    font-size: 100px;
+    background-image: linear-gradient(to right, #66f6ff, #afffc6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+}
+
+body.dark-mode .container {
+    background: #1c1c1c;
+}
+body.dark-mode .neoCont{
+    height: 300px;
+    width: 100%;
+    border-radius: 40px;
+    background: #1c1c1c;
+    box-shadow:  20px 20px 60px #181818, -20px -20px 60px #202020;
+}
+body.dark-mode .lugarCont {
+    color: aliceblue;
+}
+
+body.dark-mode .hora {
+    color: #dde1e7; /* Color de texto en modo oscuro */
+}
+
+.byn{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.btn{
+    border-radius: 50px;
+    border: 0;
+    text-align: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #1c1c1c;
+    font-size: 10px;
+    font-weight: 100;
+    position: fixed;
+    color: white;
+}
+
+body.dark-mode .btn{
+    border-radius: 50px;
+    border: 0;
+    text-align: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #dde1e7;
+    box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+    font-size: 10px;
+    font-weight: 100;
+    position: fixed;
+    color: #181818;
+}
